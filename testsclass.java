@@ -39,7 +39,7 @@ class FeverController {
     // Helper function to determine the appropriate action based on the temperature
     private Signal determineAction(int temp) {
         if (isFeverish(temp)) {
-            System.out.println("Fever detected! Recommended action: Cooling");
+            System.out.println("Fever detected! Recommended action: Need Medication!");
             return Signal.COOLING;
         } else if (temp == 0) {
             System.out.println("No temperature recorded. No specific action recommended.");
